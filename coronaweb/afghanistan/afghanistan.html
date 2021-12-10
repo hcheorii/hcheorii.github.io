@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>아프가니스탄 코로나-19 현황</title>
+    <link rel="stylesheet" type="text/css" href="../countrystyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+</head>
+<script>
+    function getingu() {
+        var text = "<mark>아프가니스탄의 인구 수</mark><br><br><span style = 'font-size : 100px'><mark>3,983만 5,428명</mark></span>";
+        var p = document.getElementById("main_info");
+        p.innerHTML = text;
+    }
+
+    function get_corona_sum() {
+        var text =
+            "<mark>아프가니스탄의 확진자 수</mark><br><br><span style = 'font-size : 100px'><mark>157,387명</mark></span>";
+        var p = document.getElementById("main_info");
+        p.innerHTML = text;
+    }
+
+    function corona_ratio() {
+        var text = "<mark>아프가니스탄의 코로나 확진률</mark><br><br><span style = 'font-size : 100px'><mark>0.395%</mark></span>";
+        var p = document.getElementById("main_info");
+        p.innerHTML = text;
+    }
+
+    function dead() {
+        var text =
+            "<mark>아프가니스탄의 코로나 사망자 수</mark><br><br><span style = 'font-size : 100px'><mark>7,310명</mark></span>";
+        var p = document.getElementById("main_info");
+        p.innerHTML = text;
+    }
+
+    function fatality_rate() {
+        var text =
+            "<mark>아프가니스탄의 코로나 치사율</mark><br><br><span style = 'font-size : 100px'><mark>4.644%</mark></span>";
+        var p = document.getElementById("main_info");
+        p.innerHTML = text;
+    }
+</script>
+
+<body>
+    <div>
+        <span class="maintitle"><strong>아프가니스탄 (Afghanistan) </strong></span>
+        <a href="../pyoji.html"><strong>HOME</strong></a>
+        <a href="https://covid19.who.int/region/emro/country/af" target="_blank"><strong>WHO 아프가니스탄 COVID-19 현황</strong></a
+      >
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div id="btn_group" style="text-align: center">
+      <button id="ingu" onclick="getingu()">인구수</button>
+      <button id="corona_sum" onclick="get_corona_sum()">누적확진자</button>
+      <button id="corona_ratio" onclick="corona_ratio()">확진률</button>
+      <button id="dead" onclick="dead()">누적 사망자</button>
+      <button id="fatality_rate" onclick="fatality_rate()">치사율</button>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <img src="afghanistan_info.png" width="600px" height="300px" />
+      <img src="afghanistan_flag.png" width="600px" height="300px" />
+    </div>
+    <br><br>
+    <div id="main_info" style="text-align: center"></div>
+  </body>
+</html>
