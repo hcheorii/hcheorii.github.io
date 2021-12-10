@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>아시아 코로나-19 현황</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function moveUrl() {
+            var country = document.getElementById("inputName").value;
+            switch (country) {
+                case "대한민국":
+                    window.open("korea/korea.html");
+                    break;
+                case "중국":
+                    window.open("china/china.html");
+                    break;
+                case "대만":
+                    window.open("taiwan/taiwan.html");
+                    break;
+                case "마카오":
+                    window.open("macao/macao.html");
+                    break;
+                case "일본":
+                    window.open("japan/japan.html");
+                    break;
+                case "싱가포르":
+                    window.open("singapore/singapore.html");
+                    break;
+                case "태국":
+                    window.open("thailand/thailand.html");
+                    break;
+                case "말레이시아":
+                    window.open("malaysia/malaysia.html");
+                    break;
+                case "베트남":
+                    window.open("vietnam/vietnam.html");
+                    break;
+                case "인도":
+                    window.open("india/india.html");
+                    break;
+                case "필리핀":
+                    window.open("philippine/philippine.html");
+                    break;
+                case "캄보디아":
+                    window.open("cambodia/cambodia.html");
+                    break;
+                case "네팔":
+                    window.open("nepal/nepal.html");
+                    break;
+                case "스리랑카":
+                    window.open("srilanka/srilanka.html");
+                    break;
+                case "아프가니스탄":
+                    window.open("afghanistan/afghanistan.html");
+                    break;
+                case "파키스탄":
+                    window.open("pakistan/pakistan.html");
+                    break;
+                case "인도네시아":
+                    window.open("indonesia/indonesia.html");
+                    break;
+                case "부탄":
+                    window.open("bhutan/bhutan.html");
+                    break;
+                case "몰디브":
+                    window.open("maldives/maldives.html");
+                    break;
+                case "방글라데시":
+                    window.open("bangladesh/bangladesh.html");
+                    break;
+                case "브루나이":
+                    window.open("bruneidarussalam/bruneidarussalam.html");
+                    break;
+                case "몽골":
+                    window.open("mongolia/Mongolia.html");
+                    break;
+                case "카자흐스탄":
+                    window.open("kazakhstan/kazakhstan.html");
+                    break;
+                case "우즈베키스탄":
+                    window.open("uzbekistan/uzbekistan.html");
+                    break;
+                case "키르기스스탄":
+                    window.open("kyrgyzstan/kyrgyzstan.html");
+                    break;
+                case "동티모르":
+                    window.open("east_timor/east_timor.html");
+                    break;
+                case "미얀마":
+                    window.open("myanmar/myanmar.html");
+                    break;
+                case "라오스":
+                    window.open("laos/laos.html");
+                    break;
+                case "타지키스탄":
+                    window.open("tajikistan/tajikistan.html");
+                    break;
+                default:
+                    alert("아시아대륙 나라가 아닙니다 ! 다시입력하세요.");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="emptyspace"></div>
+    <div class="wpahr" style="color : white;"><strong>아시아 코로나-19 현황 <sub>2021-12-04기준</sub></strong></div>
+    <div id="emptyspace2"></div>
+    <form>
+        <div>
+            <strong><mark style = " color : white; border-radius : 10px;">아시아대륙 국가 입력</strong></mark> :
+            <input list="countrylist" id="inputName" onkeyup="if(window.event.keyCode==13){javascript:moveUrl()}" placeholder="ex) 대한민국, 중국, 일본" style="width :300px; height:50px;">
+            <button id="main_btn" onclick="javascript:moveUrl()">입력</button>
+        </div>
+    </form>
+    <div style="text-align : center;">
+        <br><br>
+        <a id="korea_corona" href="https://m.news.naver.com/covid19/index" target="_blank">대한민국 지역별 코로나 현황√</a>
+    </div>
+
+    <datalist id="countrylist">
+          <option value ="대한민국"></option>
+          <option value ="중국"></option>
+          <option value ="대만"></option>
+          <option value ="마카오"></option>
+          <option value ="일본"></option>
+          <option value ="싱가포르"></option>
+          <option value ="태국"></option>
+          <option value ="말레이시아"></option>
+          <option value ="베트남"></option>
+          <option value ="인도"></option>
+          <option value ="필리핀"></option>
+          <option value ="캄보디아"></option>
+          <option value ="네팔"></option>
+          <option value ="스리랑카"></option>
+          <option value ="아프가니스탄"></option>
+          <option value ="파키스탄"></option>
+          <option value ="인도네시아"></option>
+          <option value ="부탄"></option>
+          <option value ="몰디브"></option>
+          <option value ="방글라데시"></option>
+          <option value ="브루나이"></option>
+          <option value ="몽골"></option>
+          <option value ="카자흐스탄"></option>
+          <option value ="우주베키스탄"></option>
+          <option value ="키르기스스탄"></option>
+          <option value ="동티모르"></option>
+          <option value ="미얀마"></option>
+          <option value ="라오스"></option>
+          <option value ="타지키스탄"></option>
+      </datalist>
+</body>
+
+</html>
